@@ -9,10 +9,10 @@ import { TickerData } from './types';
 export class TickerBackgroundService {
   constructor(private prisma: PrismaService) {}
 
-  @Cron(CronExpression.EVERY_MINUTE)
-  async tickerBackground() {
-    await this.saveCoinsPairPrice();
-  }
+  //@Cron(CronExpression.EVERY_MINUTE)
+  //async tickerBackground() {
+  //  await this.saveCoinsPairPrice();
+  //}
 
   async getCoinsPair(): Promise<TickerData | null> {
     try {

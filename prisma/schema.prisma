@@ -13,7 +13,7 @@ datasource db {
 model CoinsPair {
   //filds
   id        String   @id @default(uuid())
-  symbol      String
+  symbol    String
   lastPrice Decimal  @map("last_price")
   createdAt DateTime @default(now()) @map("created_at")
 
