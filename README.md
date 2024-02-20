@@ -25,7 +25,7 @@ npm i
 
 - Create a .env file in the root directory and add the following environment variables:
 
-```json
+```js
 PORT=3000
 DATABASE_URL=your_database_url
 ```
